@@ -10,15 +10,47 @@
 </head>
 
 <body>
-	<nav class="navbar">
+	<nav class="navbar navbar-expand-sm">
 		<!-- navegação -->
-		<div class="nav container-fluid wrap">
+		<div class="nav container wrap">
 			<div class="logo">
 				<div class="icon"></div>
 				<div class="name">Chameleon</div>
 			</div>
 
-			<ul class="nav-menu">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul id="menu" class="navbar-nav nav-menu">
+					<li class="nav-item">
+						<a href="#">Início</a>
+					</li>
+
+					<li class="nav-item active">
+						<a href="#">Serviços</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#">Portifólio</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#">Templates</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#">Contato</a>
+					</li>
+					<!-- Fazer login na direita -->
+					<li class="nav-item ml-auto">
+						<a href="#">Fazer login</a>
+					</li>
+				</ul>
+			</div>
+
+			<ul class="nav-menu" hidden>
 				<li class="item">
 					<a href="#">Início</a>
 				</li>
@@ -63,21 +95,23 @@
 		<div class="boy"></div>
 	</div>
 
-	<div class="breadcrumb">
+	<div id="breadcrumb">
 		<div class="navigation">
-			<div class="wrap container-fluid navigation-text">
+			<div class="wrap container navigation-text">
 				<a href="#">Navegue pelo site</a>
-				<a href="#">Início</a>
+				<i class="fas fa-home active"></i>
+				<a href="#" class="active">Início</a>
+				<i class="far fa-angle-right active"></i>
 			</div>
 		</div>
 
-		<div class="highlighter">
-			<div class="row center-xs">
-				<div class="col-xs-12">
+		<div class="highlighter d-flex justify-content-center text-center">
+			<div class="row align-self-center">
+				<div class="col-12">
 					<h1>E aí, preparado para começar o seu projeto?</h1>
 				</div>
 
-				<div class="col-xs-12">
+				<div class="col-12">
 					<button>Começar avaliação gratuita</button>
 				</div>
 			</div>
@@ -87,17 +121,17 @@
 	<div id="services" class="wrap container-fluid">
 		<div class="column-title">Nossos</div>
 
-		<div class="row tab-options">
-			<div class="col-xs tab-item"></div>
-			<div class="col-xs tab-item"></div>
-			<div class="col-xs tab-item"></div>
-			<div class="col-xs tab-item"></div>
-			<div class="col-xs tab-item"></div>
-			<div class="col-xs tab-item active"> <div class="pipper"></div> </div>
-		</div>
+		<!-- <div class="row tab-options">
+			<div class="col-xs-2 tab-item"></div>
+			<div class="col-xs-2 tab-item"></div>
+			<div class="col-xs-2 tab-item"></div>
+			<div class="col-xs-2 tab-item"></div>
+			<div class="col-xs-2 tab-item"></div>
+			<div class="col-xs-2 tab-item active"> <div class="pipper"></div> </div>
+		</div> -->
 
 		<div class="row products">
-			<div class="col-xs">
+			<div class="col-12 col-lg-3">
 				<div class="box">
 					<div class="title">Design Gráfico</div>
 					<div class="description">Personalize o seu negócio com design de folders, folhetos, criação de cartões de visita, timbrados, envelopes, diagramação de livros, revistas.</div>
@@ -116,7 +150,7 @@
 				</div>
 			</div>
 
-			<div class="col-xs">
+			<div class="col-12 col-lg-3">
 				<div class="box">
 					<div class="title">Design Gráfico</div>
 					<div class="description">Personalize o seu negócio com design de folders, folhetos, criação de cartões de visita, timbrados, envelopes, diagramação de livros, revistas.</div>
@@ -135,7 +169,7 @@
 				</div>
 			</div>
 
-			<div class="col-xs">
+			<div class="col-12 col-lg-3">
 				<div class="box">
 					<div class="title">Design Gráfico</div>
 					<div class="description">Personalize o seu negócio com design de folders, folhetos, criação de cartões de visita, timbrados, envelopes, diagramação de livros, revistas.</div>
@@ -154,20 +188,22 @@
 				</div>
 			</div>
 
-			<div class="col-xs">
+			<div class="col-12 col-lg-3">
 				<div class="box">
 					<div class="title">Design Gráfico</div>
 					<div class="description">Personalize o seu negócio com design de folders, folhetos, criação de cartões de visita, timbrados, envelopes, diagramação de livros, revistas.</div>
 
 					<hr>
 
-					<div class="options">
-						<button class="btn btn-success">Eu quero!</button>
+					<div class="d-flex">
+						<div class="justify-content-between">
+							<button class="btn btn-success">Eu quero!</button>
 
-						<div class="about">
-							<strong>130+</strong>
-							<br>
-							marcas criadas
+							<div class="about">
+								<strong>130+</strong>
+								<br>
+								marcas criadas
+							</div>
 						</div>
 					</div>
 				</div>
@@ -179,24 +215,16 @@
 
 	<div id="case" class="wrap container-fluid">
 		<div class="row">
-			<div class="col-xs-1 column-title">Case</div>
+			<div class="col-2 column-title">Case</div>
 
-			<ul class="col-xs-9 category">
+			<ul class="col-10 category">
 				<li class="active"><a href="#">Todos</a></li>
 				<li><a href="#">Design Gráfico</a></li>
 				<li><a href="#">Criação de Logomarcas</a></li>
 				<li><a href="#">Criação de Sites</a></li>
 				<li><a href="#">Mídias Sociais</a></li>
-				<li><a href="#">Reformulação de Identidade Visual</a></li>
+				<li><a href="#">Identidade Visual</a></li>
 			</ul>
-
-			<div class="col-xs-2 type-column">
-				<span>Modo de disposição</span>
-				<div class="options">
-					<button class="column-2"></button>
-					<button class="column-1"></button>
-				</div>
-			</div>
 		</div>
 
 		<hr>
@@ -252,5 +280,10 @@
 	<br>
 	<br>
 	<br>
+
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/isotope.min.js"></script>
+	<script src="/js/main.js"></script>
 </body>
 </html>
