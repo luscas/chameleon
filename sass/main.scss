@@ -136,6 +136,7 @@ b {
 	position: relative;
 	top: -4px;
 	display: table;
+	overflow-x: hidden;
 	.highlighter {
 		position: relative;
 		z-index: 1;
@@ -361,6 +362,9 @@ b {
 				margin-top: 5px;
 				font: 18px $semi;
 				padding: 0 18px;
+			}
+			.options {
+				padding: 20px 0;
 			}
 			.about {
 				font: 16px $light;

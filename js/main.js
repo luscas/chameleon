@@ -17,5 +17,9 @@ $(document).ready(function() {
 		$('.x').css({
 			right: '-250px'
 		});
+
+		$('.boy').css({
+			right: '17px'
+		});
 	}
 });
