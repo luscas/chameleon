@@ -9,3 +9,13 @@ $(document).scroll(function(handler) {
 		'background-position' : 'right -' + ( $(this).scrollTop() - 80) + 'px'
 	});
 });
+
+$(document).ready(function() {
+	var largura = $(this).width();
+
+	if( largura >= 1440 ) {
+		$('.x').css({
+			right: '-250px'
+		});
+	}
+});

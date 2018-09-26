@@ -2,6 +2,8 @@ $light: 'Bahnschrift Light', sans-serif;
 $semi: 'Bahnschrift Semicondensed', sans-serif;
 $bold: 'Bahnschrift Condensed', sans-serif;
 
+@import '_responsive.sass';
+@import '_fonts.sass';
 @import '../css/normalize.min.css';
 @import 'https://pro.fontawesome.com/releases/v5.1.0/css/all.css';
 @import '../css/bootstrap.min.css';
