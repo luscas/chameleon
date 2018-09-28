@@ -1,6 +1,8 @@
-$light: 'Bahnschrift Light', sans-serif;
-$semi: 'Bahnschrift Semicondensed', sans-serif;
-$bold: 'Bahnschrift Condensed', sans-serif;
+$font_default: 'Bahnschrift';
+$light: 'Bahnschrift Light';
+$semi: 'Bahnschrift Semicondensed';
+$bold: 'Bahnschrift Condensed';
+$light_semi: 'Bahnschrift Light';
 
 @import '_responsive.sass';
 @import '_fonts.sass';
@@ -84,7 +86,7 @@ b {
 			display: flex;
 			flex-direction: row;
 			li {
-				font: 20px $semi;
+				font: 20px $light_semi;
 				color: #222;
 				padding: 30px 15px;
 				position: relative;
@@ -94,6 +96,7 @@ b {
 				&.active:after {
 					content: '';
 					background-color: #2D9C40;
+					font-family: $semi;
 					width: calc(100% - 30px);
 					height: 2px;
 					margin: 0 auto;

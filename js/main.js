@@ -10,10 +10,10 @@ $(document).scroll(function(handler) {
 	});
 });
 
-$(document).ready(function() {
+var redimensiona = function() {
 	var largura = $(this).width();
 
-	if( largura >= 1440 ) {
+	if( largura <= 1440 ) {
 		$('.x').css({
 			right: '-250px'
 		});
@@ -21,5 +21,17 @@ $(document).ready(function() {
 		$('.boy').css({
 			right: '17px'
 		});
+	} else {
+		$('.x').css({
+			right: 0
+		});
+
+		$('.boy').css({
+			right: 270
+		});
 	}
+}
+
+$(window).resize(function() {
+	redimensiona();
 });
