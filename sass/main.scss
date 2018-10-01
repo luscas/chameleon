@@ -4,9 +4,9 @@ $semi: 'Bahnschrift Semicondensed';
 $bold: 'Bahnschrift Condensed';
 $light_semi: 'Bahnschrift Light';
 
-@import '_responsive.sass';
-@import '_fonts.sass';
-@import '_ui.scss';
+@import '_responsive';
+@import '_fonts';
+@import '_ui';
 @import '../css/normalize.min.css';
 @import 'https://pro.fontawesome.com/releases/v5.1.0/css/all.css';
 @import '../css/bootstrap.min.css';
@@ -446,50 +446,13 @@ b {
 	padding-right: 0;
 }
 
-@media screen and (min-width: 1900px) {
-	.logo {
-		width: 200px;
-		top: 22px;
-		left: -215px;
-	}
-}
-@media screen and (max-width: 1680px) {
-	.wrap {
-		width: 75rem;
-	}
-	.logo {
-		width: 50px;
-		left: 30px;
-		.name {
-			display: none;
-		}
-		.icon {
-			margin-top: 3px;
-		}
-	}
-}
-
-
-@media screen and (max-width: 1280px) {
-	.wrap {
-		width: 70rem;
-	}
-	.icon {
-		margin-left: -12px;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.wrap {
-		width: 50rem;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.nav-menu {
-		display: none;
-	}
-	.wrap {
-		width: 38rem;
+/* CASES */
+.cases {
+	margin-top: 40px;
+	.case-item {
+		background-color: #fff;
+		max-width: 320px;
+		max-height: 320px;
+		box-shadow: 0 2px red;
 	}
 }
