@@ -2,7 +2,9 @@ $font_default: 'Bahnschrift';
 $light: 'Bahnschrift Light';
 $semi: 'Bahnschrift Semicondensed';
 $bold: 'Bahnschrift Condensed';
+$semibold: 'Bahnschrift SemiBold';
 $light_semi: 'Bahnschrift Light';
+$light_semi_condensed: 'Bahnschrift Light SemiCondensed';
 
 @import '_responsive';
 @import '_fonts';
@@ -366,6 +368,10 @@ b {
 				margin-top: 5px;
 				font: 18px $semi;
 				padding: 0 18px;
+				&:hover {
+					background-color: #fff;
+					color: #2D9C40;
+				}
 			}
 			.options {
 				padding: 20px 0;
@@ -389,7 +395,39 @@ b {
 	}
 }
 
+.buceta {
+	font-family: $light;
+}
 #case {
+	.cases {
+		margin-top: 40px;
+		.case-item {
+			background-color: #fff;
+			margin-bottom: 34px;
+			&:not(:last-of-type):nth-child(3n+2) {
+				// background-color: red;
+				text-align: center;
+			}
+			.image {
+				-webkit-filter: drop-shadow(0 2px 10px rgba(0,0,0,0.20));
+				-moz-filter: drop-shadow(0 2px 10px rgba(0,0,0,0.20));
+				-o-filter: drop-shadow(0 2px 10px rgba(0,0,0,0.20));
+				filter: drop-shadow(0 2px 10px rgba(0,0,0,0.20));
+			}
+			.title {
+				max-width: 320px;
+				font: 20px $semibold;
+				color: #222;
+				padding-top: 23px;
+			}
+			.description {
+				max-width: 320px;
+				font: 16px $light;
+				color: #222;
+				padding-top: 12px;
+			}
+		}
+	}
 	.category {
 		margin: 6px 0 0 0;
 		padding: 0;
@@ -444,15 +482,4 @@ b {
 [class*="col-"] {
 	padding-left: 0;
 	padding-right: 0;
-}
-
-/* CASES */
-.cases {
-	margin-top: 40px;
-	.case-item {
-		background-color: #fff;
-		max-width: 320px;
-		max-height: 320px;
-		box-shadow: 0 2px red;
-	}
 }
