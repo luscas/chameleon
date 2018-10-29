@@ -1,0 +1,22 @@
+{
+  "name": "chameleon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/luscas/chameleon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luscas/chameleon/issues"
+  },
+  "homepage": "https://github.com/luscas/chameleon#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}

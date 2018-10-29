@@ -31,11 +31,11 @@
 // 		width: 38rem
 
 /* Show "Chameleon" -> .logo .name
-@media (min-width: 1840px)
-	.logo
-		width: 200px
-		top: 22px
-		left: -215px
+// @media (min-width: 1840px)
+// 	.logo
+// 		width: 200px
+// 		top: 22px
+// 		left: -215px
 
 /* Hide "Chameleon" -> .logo .name
 @media (max-width: 1840px)
@@ -53,3 +53,15 @@
 			display: none
 		.boy
 			display: none
+
+@media (max-width: 768px)
+	.mask-x
+		z-index: -1
+		display: none
+
+@media (width: 1024px)
+	#services
+		.col-lg-3
+			ms-flex: 0 0 33.3%
+			flex: 0 0 33.3%
+			max-width: 33.3%
