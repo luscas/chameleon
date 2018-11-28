@@ -693,12 +693,13 @@ button {
 		font-variation-settings: "wght" 300, "wdth" 87;
 		color: #fff;
 		grid-area: text;
-		justify-self: left;
+		justify-self: right;
 	}
 
 	.button {
 		grid-area: button;
-		justify-self: right;
+		justify-self: left;
+		margin-left: 20px;
 	}
 }
 
@@ -711,6 +712,7 @@ button {
 		.button {
 			justify-self: center;
 			margin-top: 10px;
+			margin-left: 0;
 		}
 	}
 	#footer .contact {
