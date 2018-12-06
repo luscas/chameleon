@@ -1,5 +1,5 @@
+@import '_variables.scss';
 @import '_functions.scss';
-@import '_responsive.sass';
 @import '_fonts';
 @import '_ui';
 @import '../css/normalize.min.css';
@@ -111,6 +111,10 @@ button {
 		-o-filter: blur(40px);
 		opacity: 0.23;
 		transition: all 0.3s linear;
+
+		@include respond-to('xlarge') {
+			display: none;
+		}
 	}
 }
 
@@ -176,6 +180,10 @@ button {
 		top: 0px;
 		right: 0;
 		z-index: 0;
+
+		@include respond-to('xlarge') {
+			display: none;
+		}
 	}
 	.boy {
 		background-image: url('../img/boy.png');
@@ -185,6 +193,10 @@ button {
 		top: -19px;
 		right: 270px;
 		z-index: 1;
+
+		@include respond-to('xlarge') {
+			display: none;
+		}
 	}
 }
 
@@ -644,6 +656,9 @@ button {
 		}
 	}
 	.contact {
+		@include respond-to('medium') {
+			margin-top: 0;
+		}
 		.title {
 			font-size: 30px;
 			font-variation-settings: "wght" 300, "wdth" 87;
@@ -687,35 +702,34 @@ button {
 .notification-grid {
 	display: grid;
 	grid-template-areas: "text button";
+	align-items: center;
+	@include respond-to('small') {
+		grid-template-areas: "text" "button";
+	}
 
 	.text {
-		font-size: 30px;
+		font-size: calc(16px + 0.5vw);
 		font-variation-settings: "wght" 300, "wdth" 87;
 		color: #fff;
 		grid-area: text;
 		justify-self: right;
+		@include respond-to('small') {
+			justify-self: center;
+		}
 	}
 
 	.button {
 		grid-area: button;
 		justify-self: left;
 		margin-left: 20px;
-	}
-}
-
-@media (max-width: 768px) {
-	.notification-grid {
-		grid-template-areas: "text" "button";
-		.text {
-			justify-self: center;
-		}
-		.button {
+		@include respond-to('small') {
 			justify-self: center;
 			margin-top: 10px;
 			margin-left: 0;
 		}
-	}
-	#footer .contact {
-		margin-top: 0;
+
+		button {
+			font-size: calc(16px + 0.2vw);
+		}
 	}
 }
